@@ -271,8 +271,8 @@ router.post('/login', (req, res) => {
 
 
 const wx = {
-  appid: 'wxfff9437a7b985896',
-  secret: 'aabf0078a9753823be5bad0525429717'
+  appid: 'xxx',//你的微信appid
+  secret: 'xxx'//你的微信秘钥
 }
 
 var db = {
