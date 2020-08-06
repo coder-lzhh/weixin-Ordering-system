@@ -1,0 +1,93 @@
+.info {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .message {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .message .img {
+  width: 20vh;
+  text-align: center;
+}
+.info .message .img image {
+  border-radius: 50%;
+}
+.recode {
+  font-size: 42rpx;
+  background-color: #eee;
+  padding: 20rpx;
+}
+.item .number1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  border-top: 1px solid #ff2d4a;
+}
+.item .number1 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .number1 .num1 {
+  font-size: 60rpx;
+  color: #ff2d4a;
+}
+.item .iteminfo {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0 20rpx;
+}
+.item .iteminfo .number2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.item .iteminfo .allprices {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.item .iteminfo .addtiem {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.item .iteminfo .message {
+  display: flex;
+  padding: 20rpx 0;
+}
+.item .iteminfo .message .text {
+  flex: 2;
+}
+.item .iteminfo .message .messages {
+  text-align: right;
+  flex: 4;
+}
+.item .list {
+  padding: 20rpx;
+}
+.item .listinfo .listitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+  border-top: 1px solid #ccc;
+}
+.item .listinfo .listitem .img {
+  flex: 2;
+}
+.item .listinfo .listitem .name {
+  padding-left: 20rpx;
+  flex: 4;
+}
+.item .listinfo .listitem .num3 {
+  flex: 1;
+}

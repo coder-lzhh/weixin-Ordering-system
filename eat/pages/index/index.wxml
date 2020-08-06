@@ -1,0 +1,38 @@
+<view class="all">  
+  <view class="centent">
+    <scroll-view class="left">
+      <view wx:for="{{food}}" wx:key="name" data-index="{{index}}" class="{{index==actindex?'actice':''}}" bindtap="nameclick">{{item.name}}</view>
+    </scroll-view>
+
+    <scroll-view class="right" scroll-y scroll-into-view="list{{scrollindex}}" scroll-with-animation  bindscroll="listscroll" bindscrolltolower="scrollbottom">
+      <view class="foodlist" wx:for="{{food}}" wx:key="name">
+        <view class="text" id="list{{index}}">{{item.name}}</view>
+        <view class="fooditem" wx:for="{{item.food}}" wx:key="id" wx:for-index="index1" wx:for-item="item1">
+          <view class="img">
+            <image class="" src="{{item1.image_url}}" mode="widthFix" />
+          </view>
+          <view class="foodinfo">
+            <view class="foodname">{{item1.name}}</view>
+            <view class="count">
+              <view class="price">￥{{item1.price}}</view>
+              <view class="calc" data-index1="{{index1}}" data-index="{{index}}" bindtap="addcart">
+                +
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+ 
+
+        
+    </scroll-view>
+  </view>
+  <view class="bottom">
+   <view class="ball" hidden="{{!cartBall.show}}" style="left: {{cartBall.x}}px; top: {{cartBall.y}}px;"></view>
+    <view class="allprice">
+      <b class="balldance">合计:</b>
+      <text>￥{{totalprice}}</text>
+    </view>
+    <navigator class="buy" target="" url="/pages/cart/index" open-type="switchTab">去购物车</navigator>
+  </view>
+</view>

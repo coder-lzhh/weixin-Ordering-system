@@ -1,0 +1,101 @@
+page {
+  padding-bottom: 90rpx;
+}
+.foodlist .text {
+  font-size: 42rpx;
+  background-color: #eee;
+  padding: 20rpx;
+}
+.foodlist .none {
+  height: calc( 100vh - 180rpx );
+  font-size: 60rpx;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foodlist .fooditem {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1px solid #ddd;
+}
+.foodlist .fooditem .check {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foodlist .fooditem .img {
+  flex: 2;
+}
+.foodlist .fooditem .foodinfo {
+  flex: 4;
+  padding: 0 10rpx;
+}
+.foodlist .fooditem .foodinfo .foodname {
+  margin-bottom: 30rpx;
+}
+.foodlist .fooditem .foodinfo .count {
+  display: flex;
+  justify-content: space-between;
+}
+.foodlist .fooditem .foodinfo .count .price {
+  color: #ff2d4a;
+  font-size: 42rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foodlist .fooditem .foodinfo .count .calc {
+  font-size: 36rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  display: flex;
+  text-align: center;
+}
+.foodlist .fooditem .foodinfo .count .calc .sub {
+  width: 50rpx;
+  height: 50rpx;
+  border: solid 1px #aaa;
+}
+.foodlist .fooditem .foodinfo .count .calc .num {
+  width: 50rpx;
+  height: 50rpx;
+}
+.foodlist .fooditem .foodinfo .count .calc .add {
+  width: 50rpx;
+  height: 50rpx;
+  border: solid 1px #aaa;
+}
+.bottom {
+  height: 90rpx;
+  background-color: #ccc;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+.bottom .allcheck {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom .allprice {
+  flex: 5;
+  text-align: center;
+  line-height: 90rpx;
+}
+.bottom .allprice text {
+  color: #ff2d4a;
+  font-size: 44rpx;
+}
+.bottom .buy {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 46rpx;
+  background-color: #ff2d4a;
+}

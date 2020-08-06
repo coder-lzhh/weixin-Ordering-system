@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>菜单管理系统</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href="/public/css/index.css" rel="stylesheet">
+
+
+</head>
+<body style="padding-left: 10px;">
+  <h2>菜单管理系统</h2>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="table-responsive">
+
+        <form class="form-inline" action="/foods/newcategory" method="post">
+          <div class="form-group">
+            <label for="exampleInputName2">菜品名：</label>
+            <input type="text" class="form-control" id="exampleInputName2"  name='name' placeholder="菜品分类名">
+          </div>　
+          <div class="form-group">
+            <label for="exampleInputEmail2">idd：</label>
+            <input type="number" class="form-control" name='idd' id="exampleInputEmail2" >
+          </div>
+          <button type="submit" class="btn btn-success">添加分类</button>
+        </form>
+        <!-- <a class="btn btn-success" href="/foods/newcategory">添加分类</a> -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>分类</th>
+              <th>菜名</th>
+              <th>ID</th>
+              <th>价钱</th>
+              <th>imageURL</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{each foods item value}}
+            <tr>
+              <td style="background-color:aquamarine;">{{item.name}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href="/foods/newfood?idd={{item.idd}}" class="btn btn-success">添加菜品</a>
+                <a href="/foods/deletecategory?idd={{item.idd}}" class="btn btn-danger">删除分类</a>
+              </td>
+            </tr>
+            {{each item.food item1 value1}}
+            <tr>
+              <td>{{  }}</td>
+              <td>{{item1.name}}</td>
+              <td>{{item1.id}}</td>
+              <td>￥{{item1.price}}</td>
+              <td>{{item1.image_url}}</td>
+              <td>
+                <a href="/foods/edit?index1={{value}}&index2={{value1}}">编辑</a>
+                <a href="/foods/deletefood?index1={{value}}&index2={{value1}}">删除</a>
+              </td>
+            </tr>
+            {{/each}}
+
+            {{/each}}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<view class="goodcentent">
+  <view class="goods">订单支付</view>
+  <view class="goodslist" wx:for="{{cart}}" wx:key="id">
+    <view class="gooditem">
+      <view class="goodimg">
+        <image class="" src="{{item.image_url}}" mode="widthFix" />
+      </view>
+      <view class="goodinfo">
+        <view class="goodname">{{item.name}}</view>
+        <view class="goodnum">
+          <view class="goodprice">￥{{item.price}}</view>
+          <view class="goodcount">X {{item.num}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="textarea">
+  <view class="text">备注：</view>
+  <textarea value=""  placeholder="口味等。。。" bindblur="bindblur" maxlength="60"></textarea>
+</view>
+<view class="paybottom">
+  <view class="left">
+    <view class="price">
+      合计：
+      <text>￥{{totalprice}}</text>
+    </view>
+  </view>
+  <view class="pay" bindtap="pay">支付</view>
+</view>

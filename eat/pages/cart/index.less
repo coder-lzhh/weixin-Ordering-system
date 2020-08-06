@@ -1,0 +1,133 @@
+page {
+  padding-bottom: 90rpx;
+}
+
+.foodlist {
+
+  .text {
+    font-size: 42rpx;
+    background-color: #eee;
+    padding: 20rpx;
+  }
+
+  .none {
+    height: ~'calc( 100vh - 180rpx )';
+    font-size: 60rpx;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+
+  }
+
+  .fooditem {
+    display: flex;
+    padding: 10rpx;
+    border-bottom: 1px solid #ddd;
+
+    .check {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img {
+      flex: 2;
+    }
+
+    .foodinfo {
+      flex: 4;
+      padding: 0 10rpx;
+
+      .foodname {
+        margin-bottom: 30rpx;
+      }
+
+      .count {
+        display: flex;
+        justify-content: space-between;
+
+        .price {
+          color: #ff2d4a;
+          font-size: 42rpx;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .calc {
+
+          // background-color: #ff2d4a;
+          font-size: 36rpx;
+          // color: white;
+          padding: 10rpx;
+          border-radius: 10rpx;
+          display: flex;
+          // justify-content: center;
+          text-align: center;
+
+          .sub {
+            width: 50rpx;
+            height: 50rpx;
+            border: solid 1px #aaa;
+
+          }
+
+          .num {
+            width: 50rpx;
+            height: 50rpx;
+
+          }
+
+          .add {
+            width: 50rpx;
+            height: 50rpx;
+            border: solid 1px #aaa;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  height: 90rpx;
+  background-color: #ccc;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+
+  // align-items: center;
+  .allcheck {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text {}
+  }
+
+  .allprice {
+    flex: 5;
+    text-align: center;
+    // padding-right: 15rpx;
+    line-height: 90rpx;
+
+    text {
+      color: #ff2d4a;
+      font-size: 44rpx;
+    }
+  }
+
+  .buy {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 46rpx;
+    background-color: #ff2d4a;
+  }
+}

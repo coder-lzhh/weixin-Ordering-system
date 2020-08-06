@@ -1,0 +1,106 @@
+page {
+  height: 100%;
+}
+.all {
+  height: 100%;
+}
+.all .centent {
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+.all .centent .left {
+  flex: 2;
+}
+.all .centent .left view {
+  text-align: center;
+  font-size: 46rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #ff2d4a;
+}
+.all .centent .left .actice {
+  color: #ff2d4a;
+}
+.all .centent .right {
+  flex: 6;
+}
+.all .centent .right .foodlist .text {
+  font-size: 42rpx;
+  background-color: #eee;
+  padding: 20rpx;
+  color: #ff2d4a;
+}
+.all .centent .right .foodlist .fooditem {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1px solid #ddd;
+}
+.all .centent .right .foodlist .fooditem .img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all .centent .right .foodlist .fooditem .foodinfo {
+  flex: 4;
+  padding: 0 10rpx;
+}
+.all .centent .right .foodlist .fooditem .foodinfo .foodname {
+  margin-bottom: 30rpx;
+}
+.all .centent .right .foodlist .fooditem .foodinfo .count {
+  display: flex;
+  justify-content: space-between;
+}
+.all .centent .right .foodlist .fooditem .foodinfo .count .price {
+  color: #ff2d4a;
+  font-size: 42rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all .centent .right .foodlist .fooditem .foodinfo .count .calc {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #ff2d4a;
+  font-size: 36rpx;
+  color: white;
+  text-align: center;
+  padding: 10rpx;
+  border-radius: 50%;
+}
+.all .bottom {
+  height: 90rpx;
+  background-color: #ccc;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+.all .bottom .allprice {
+  flex: 5;
+  text-align: center;
+  line-height: 90rpx;
+}
+.all .bottom .allprice text {
+  color: #ff2d4a;
+  font-size: 44rpx;
+}
+.all .bottom .buy {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 46rpx;
+  background-color: #ff2d4a;
+}
+
+.ball {
+  width: 42rpx;
+  height: 42rpx;
+  position: fixed;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background: #ff2d4a;
+}

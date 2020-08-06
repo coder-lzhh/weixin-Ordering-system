@@ -1,0 +1,106 @@
+page {
+  padding-bottom: 90rpx;
+}
+
+.goodcentent {
+  .goods {
+    font-size: 48rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding-top: 10rpx;
+    padding-left: 60rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .goodslist {
+    .gooditem {
+      display: flex;
+      border-bottom: 1px solid var(--themecolor);
+
+      .goodimg {
+        flex: 3;
+
+        image {
+          padding: 10rpx;
+        }
+      }
+
+      .goodinfo {
+        flex: 5;
+        padding: 20rpx;
+        font-size: 36rpx;
+
+        .goodname {
+          font-size: 42rpx;
+          margin-bottom: 70rpx;
+        }
+
+        .goodnum {
+          display: flex;
+          justify-content: space-between;
+
+
+          .goodprice {
+            font-size: 40rpx;
+            color: var(--themecolor);
+          }
+
+          .goodcount {}
+        }
+      }
+    }
+  }
+}
+
+.textarea {
+  padding-left: 20rpx;
+  padding-bottom: 10rpx;
+
+  .text {}
+
+  textarea {
+    height: 15vh;
+    padding: 10rpx;
+    border: 1px solid #ccc;
+
+  }
+}
+
+.paybottom {
+  height: 90rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+
+  .left {
+    // padding-right: 15rpx;
+    // text-align: right;
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .price {
+
+      text {
+        font-size: 40rpx;
+        color: #ff2d4a;
+      }
+    }
+
+
+  }
+
+  .pay {
+    background-color: #ff2d4a;
+    color: white;
+    font-size: 43rpx;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

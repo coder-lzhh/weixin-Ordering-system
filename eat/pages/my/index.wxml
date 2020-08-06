@@ -1,0 +1,48 @@
+<view class="info">
+  <block wx:if="{{!hasUserInfo}}">
+    <button open-type="getUserInfo" type="primary" bindgetuserinfo="getuserinfo">登录</button>
+  </block>
+  <block wx:else>
+    <view class="message">
+      <view class="img">
+        <image class="" src="{{userInfo.avatarUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      </view>
+      <view class="infoname">{{userInfo.nickName}}</view>
+    </view>
+  </block>
+</view>
+<view class="recode">订单记录</view>
+<view class="item" wx:for="{{list}}" wx:key="number">
+  <view class="number1">
+    <view class="text">取 餐 号</view>
+    <view class="num1">{{item.num}}</view>
+  </view>
+  <view class="iteminfo">
+    <view class="number2">
+      <view class="text"> 订 单 号 :</view>
+      <view class="num2">{{item.number}}</view>
+    </view>
+    <view class="allprices">
+      <view class="text">金　　额 :</view>
+      <view class="price">￥{{item.totalprice}}</view>
+    </view>
+    <view class="addtiem">
+      <view class="text">下单时间 :</view>
+      <view class="tiem">{{item.addtiem}}</view>
+    </view>
+    <view class="message">
+      <view class="text">备　　注 :</view>
+      <view class="messages">{{item.message}}</view>
+    </view>
+  </view>
+  <view class="list">订餐列表</view>
+  <view class="listinfo" wx:for="{{item.children}}" wx:key="id" wx:for-index="index1" wx:for-item="item1">
+    <view class="listitem">
+      <view class="img">
+        <image class="" src="{{item1.image_url}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      </view>
+      <view class="name">{{item1.name}}</view>
+      <view class="num3">X {{item1.num}}</view>
+    </view>
+  </view>
+</view>

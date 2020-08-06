@@ -1,0 +1,75 @@
+page {
+  padding-bottom: 90rpx;
+}
+.goodcentent .goods {
+  font-size: 48rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-top: 10rpx;
+  padding-left: 60rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.goodcentent .goodslist .gooditem {
+  display: flex;
+  border-bottom: 1px solid var(--themecolor);
+}
+.goodcentent .goodslist .gooditem .goodimg {
+  flex: 3;
+}
+.goodcentent .goodslist .gooditem .goodimg image {
+  padding: 10rpx;
+}
+.goodcentent .goodslist .gooditem .goodinfo {
+  flex: 5;
+  padding: 20rpx;
+  font-size: 36rpx;
+}
+.goodcentent .goodslist .gooditem .goodinfo .goodname {
+  font-size: 42rpx;
+  margin-bottom: 70rpx;
+}
+.goodcentent .goodslist .gooditem .goodinfo .goodnum {
+  display: flex;
+  justify-content: space-between;
+}
+.goodcentent .goodslist .gooditem .goodinfo .goodnum .goodprice {
+  font-size: 40rpx;
+  color: var(--themecolor);
+}
+.textarea {
+  padding-left: 20rpx;
+  padding-bottom: 10rpx;
+}
+.textarea textarea {
+  height: 15vh;
+  padding: 10rpx;
+  border: 1px solid #ccc;
+}
+.paybottom {
+  height: 90rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+.paybottom .left {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paybottom .left .price text {
+  font-size: 40rpx;
+  color: #ff2d4a;
+}
+.paybottom .pay {
+  background-color: #ff2d4a;
+  color: white;
+  font-size: 43rpx;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

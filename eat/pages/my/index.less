@@ -1,0 +1,147 @@
+ .common() {
+   display: flex;
+   justify-content: space-between;
+   padding: 20rpx;
+ }
+
+ .flexcenter() {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .info {
+
+   height: 30vh;
+   .flexcenter;
+
+   button {
+     //  
+     //  line-height: 20vh;
+   }
+
+   .message {
+     text-align: center;
+     flex-direction: column;
+     .flexcenter;
+
+     .img {
+       width: 20vh;
+       text-align: center;
+
+       image {
+         border-radius: 50%;
+       }
+
+     }
+
+     .infoname {}
+   }
+ }
+
+ .recode {
+   font-size: 42rpx;
+   background-color: #eee;
+   padding: 20rpx;
+ }
+
+ .item {
+   .number1 {
+     .common;
+     margin-top: 20rpx;
+     border-top: 1px solid #ff2d4a;
+
+     .text {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .num1 {
+       font-size: 60rpx;
+       color: #ff2d4a;
+     }
+   }
+
+   .iteminfo {
+     border-top: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     margin: 0 20rpx;
+
+     .number2 {
+       display: flex;
+       justify-content: space-between;
+       padding: 20rpx 0;
+
+       .text {}
+
+       .num2 {}
+     }
+
+     .allprices {
+       display: flex;
+       justify-content: space-between;
+       padding: 20rpx 0;
+
+       .text {}
+
+       .price {}
+     }
+
+     .addtiem {
+       display: flex;
+       justify-content: space-between;
+       padding: 20rpx 0;
+
+
+       .text {}
+
+       .tiem {}
+     }
+
+     .message {
+       display: flex;
+       padding: 20rpx 0;
+      //  justify-content: space-between;
+
+       // flex-direction: column;
+       .text {
+         flex: 2;
+       }
+
+       .messages {
+         text-align: right;
+         flex: 4;
+       }
+     }
+   }
+
+   .list {
+     padding: 20rpx;
+   }
+
+   .listinfo {
+     .listitem {
+       display: flex;
+
+       justify-content: center;
+       align-items: center;
+       padding: 20rpx 0;
+       margin: 0 20rpx;
+       border-top: 1px solid #ccc;
+
+       .img {
+         flex: 2;
+       }
+
+       .name {
+         padding-left: 20rpx;
+         flex: 4;
+       }
+
+       .num3 {
+         flex: 1;
+       }
+     }
+   }
+ }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="/public/css/index.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+               
+
+                <h2 class="sub-header">编辑菜品</h2>
+                <div class="table-responsive">
+                    <form action="/foods/edit" method="post">
+                        <input type="hidden" name="id" value="{{foods.id}}">
+                        <input type="hidden" name="index1" value="{{foods.index1}}">
+                        <input type="hidden" name="index2" value="{{foods.index2}}">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">菜名</label>
+                            <input type="text" name="name" class="form-control" id="exampleInputEmail1"
+                                placeholder="name" value="{{foods.name}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">价钱</label>
+                            <input type="number" name="price" class="form-control" id="exampleInputPassword1"
+                                placeholder="price" value="{{foods.price}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">图片地址</label>
+                            <input type="text" class="form-control" name="image_url" id="exampleInputPassword1"
+                                placeholder="ImageURL" value="{{foods.image_url}}">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

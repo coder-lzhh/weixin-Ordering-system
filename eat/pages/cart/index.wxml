@@ -1,0 +1,40 @@
+<view class="foodlist">
+  <view class="text">我的订单</view>
+  <view wx:if="{{cart.length==0?true:false}}" class="none"  >购物车，空空如也~</view>
+  <view wx:else>
+    <view  class="fooditem" wx:for="{{cart}}" wx:key="name">
+      <view class="check">
+        <checkbox-group bindchange="checktap" data-id="{{item.id}}">
+          <checkbox class="" value="" checked="{{item.checked}}"></checkbox>
+        </checkbox-group>
+      </view>
+      <view class="img">
+        <image class="" src='{{item.image_url}}' mode="widthFix" />
+      </view>
+      <view class="foodinfo">
+        <view class="foodname">{{item.name}}</view>
+        <view class="count">
+          <view class="price">￥{{item.price}}</view>
+          <view class="calc">
+            <view class="sub" data-id="{{item.id}}" bindtap="clac" data-op='{{-1}}'>-</view>
+            <view class="num">{{item.num}}</view>
+            <view class="add" data-id="{{item.id}}" bindtap="clac" data-op='{{1}}'>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bottom">
+  <view class="allcheck">
+    <checkbox-group bindchange="Allchecktap">
+      <checkbox class="" value="" checked="{{allChecked}}"></checkbox>
+    </checkbox-group>
+    <text>全选</text>
+  </view>
+  <view class="allprice">
+    合计:
+    <text>￥{{totalPrice}}</text>
+  </view>
+  <view class="buy" bindtap="buy">结算 ({{totalNum}})</view>
+</view>
